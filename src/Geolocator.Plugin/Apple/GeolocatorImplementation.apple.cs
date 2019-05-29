@@ -40,6 +40,13 @@ namespace Plugin.Geolocator
 			manager.AuthorizationChanged += OnAuthorizationChanged;
 			manager.Failed += OnFailed;
 
+#if __IOS__
+			manager.ShouldDisplayHeadingCalibration += (CLLocationManager locationManager) =>
+			{
+				locationManager.DismissHeadingCalibrationDisplay();
+				return false;
+			};
+#endif
 
 #if __IOS__
 			if (UIDevice.CurrentDevice.CheckSystemVersion(6, 0))
@@ -49,7 +56,7 @@ namespace Plugin.Geolocator
 
 			manager.UpdatedHeading += OnUpdatedHeading;
 #elif __MACOS__ || __TVOS__
-            manager.LocationsUpdated += OnLocationsUpdated;
+			manager.LocationsUpdated += OnLocationsUpdated;
 #endif
 
 #if __IOS__ || __MACOS__
