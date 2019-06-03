@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
    <metadata minClientVersion="2.8.1">
-       <id>Xam.Plugin.Geolocator</id>
-       <version>$version$</version>
-       <title>Geolocator Plugin for Xamarin and Windows</title>
-       <authors>James Montemagno</authors>
-       <owners>James Montemagno</owners>
+       <id>Agvance.Xam.Plugin.Geolocator</id>
+       <version>1.0.0</version>
+       <title>Agvance port of Geolocator Plugin for Xamarin and Windows</title>
+       <authors>Rohit</authors>
+       <owners>Skycos</owners>
        <licenseUrl>https://github.com/jamesmontemagno/GeolocatorPlugin/blob/master/LICENSE</licenseUrl>
        <projectUrl>https://github.com/jamesmontemagno/GeolocatorPlugin</projectUrl>
        <iconUrl>http://www.refractored.com/images/plugin_icon_geolocator.png</iconUrl>
